@@ -1,12 +1,4 @@
-########################################################
-# IMPORTS
-########################################################
 from flask import Flask, render_template
-
-########################################################
-# FUNCTIONS
-########################################################
-
 
 def create_app(test_config=None):
 
@@ -14,7 +6,7 @@ def create_app(test_config=None):
 
     @app.route('/')
     def home():
-        return render_template('index.html')
+        return render_template('home.html')
 
     return app
 
